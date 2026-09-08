@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Say e.g. &quot;-500 restaurant cash arv lunch with friends&quot; or &quot;+30000 money in job earning online&quot;"
+        android:textSize="14sp" android:layout_marginBottom="12dp" />
+
+    <Button android:id="@+id/btnRecord" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="● Speak Entry"
+        android:layout_gravity="center" android:layout_marginBottom="16dp" />
+
+    <!-- Parsed fields — editable before adding to the batch -->
+    <EditText android:id="@+id/etAmount" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Amount (e.g. -500 or 500)"
+        android:inputType="numberSigned|numberDecimal" />
+    <Spinner android:id="@+id/spCashOnline" android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner android:id="@+id/spWhose" android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner android:id="@+id/spCategory" android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText android:id="@+id/etComments" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Comments (optional)" />
+
+    <Button android:id="@+id/btnAddToBatch" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="12dp"
+        android:text="Add entry (+)" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Entries this session:" android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+    <ListView android:id="@+id/lvBatch" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" />
+
+    <Button android:id="@+id/btnSaveAll" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Save All to Sheet" />
+</LinearLayout>

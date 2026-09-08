@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.mikephil.charting.charts.BarChart android:id="@+id/barCategoryByDate"
+        android:layout_width="match_parent" android:layout_height="240dp" android:padding="8dp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Raw entries" android:textStyle="bold" android:padding="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvExpenseCards"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:id="@+id/tvStatus" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Say 'Diary', 'Idea' or 'Thoughts' first, then speak."
+        android:textSize="16sp" android:layout_marginBottom="12dp" />
+
+    <Spinner android:id="@+id/spLanguage" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <Button android:id="@+id/btnRecord" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="🎤 Start Recording"
+        android:layout_gravity="center" android:layout_marginBottom="20dp" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Detected type:" android:textStyle="bold" />
+    <TextView android:id="@+id/tvType" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Review &amp; edit transcript before saving:" android:textStyle="bold" />
+    <EditText android:id="@+id/etTranscript" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:gravity="top"
+        android:background="@android:drawable/edit_text" android:padding="12dp" />
+
+    <Button android:id="@+id/btnSubmit" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:text="Submit" android:enabled="false" />
+</LinearLayout>

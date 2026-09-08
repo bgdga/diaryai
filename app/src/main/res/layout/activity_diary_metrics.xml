@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:id="@+id/tvDate" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textStyle="bold" android:textSize="18sp" />
+
+    <EditText android:id="@+id/etFamily" android:hint="Family + social"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/etExam" android:hint="Exams Prep / Study for Job"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/etBook" android:hint="Book writing / Business Prep"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/etWorkEarn" android:hint="Work to Earn for Today"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/etDailyTarget" android:hint="Daily Target"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Target achieved (n/5)" android:layout_marginTop="12dp" />
+    <RatingBar android:id="@+id/rbTarget" style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:numStars="5" android:stepSize="1.0" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Route / main location" android:layout_marginTop="12dp" />
+    <LinearLayout android:id="@+id/routeGroup" android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Work intense (1 Least – 5 Brain blasting Workload)" android:layout_marginTop="12dp" />
+    <SeekBar android:id="@+id/sbWorkIntense" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:max="4" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Mood (-5 .. +5)" android:layout_marginTop="12dp" />
+    <Spinner android:id="@+id/spMood" android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/btnSaveMetrics" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="20dp"
+        android:text="Save Today's Metrics" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="(Headlines, Thoughts and Ideas are logged separately via the voice note screen — option 1.)"
+        android:textStyle="italic" android:layout_marginTop="12dp" />
+</LinearLayout>
+</ScrollView>
